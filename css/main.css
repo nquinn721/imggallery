@@ -1,0 +1,122 @@
+.image-gallery {
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 80%;
+    box-shadow: 0 0 10px grey;
+    background: white;
+}
+.image-area {
+    width: 83%;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background:#eee;
+}
+
+.image-gallery >
+ div {
+    padding: 10px;
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    border-right: 1px solid black;
+    width: 17%;
+}
+
+.sidebar > div {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+img.background-image {
+    width: 50%;
+    height: 50%;
+}
+
+.image-area {
+    overflow: auto;
+}
+
+.image-area > .folder-image {
+    width: 118px;
+    height: 134px;
+    float: left;
+    padding: 10px;
+    border:1px solid #aaa;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0 0 11px #333;
+}
+
+.image-area > .folder-image
+ img {
+    width: 100%;
+    height: 90%;
+}
+.background-image-holder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolbar {
+    margin-bottom: 13px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.toolbar button {
+    background: #ddebff;
+    border: 1px solid black;
+    padding: 4px 10px;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 12px;
+    position: relative;
+    height: 12px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+i.fa.fa-check.ng-scope {
+    position: absolute;
+    font-size: 18px;
+    left: 0;
+    top: -3px;
+}
+
+ul.folder-dropdown {
+    position: absolute;
+    background: #eaf4ff;
+    margin-top: 4px;
+    margin-left: -11px;
+    border-right: 1px solid black;
+    padding: 0;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 84px;
+}
+
+ul.folder-dropdown li {
+    padding: 7px 20px;
+    list-style: none;
+}
+.folder-dropdown li:hover{
+    background:#eee;
+    cursor: pointer;
+}
